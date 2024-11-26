@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://www.w3schools.com/w3css/tryw3css_templates_analytics.htm# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Polar - <COMPANY> - <ITERATION></title>
+<link rel="icon" href="https://storage.googleapis.com/ecija-intranet/logos_app/favico.ico?Expires=1693557395&amp;GoogleAccessId=ecija-storage%40ecija-intranet.iam.gserviceaccount.com&amp;Signature=K%2FWiQLKkrdamGzD%2B9NK4oG5DqFyX%2BCQUf0pPToYaosGyLdF2Ms8O9txkNSj1AZ4H7rWOQcmy58FcVgtEOlM2MPPui9Xm%2BgZahR%2Br4dKQm2aO63A32G44bdRDwtbGZXMXQZfoNccWHpi0YxGLz0FoDqqPLZIjq2eLTwtLi8Ff25XaizM8rT00VsyH6UBKb9rh3qhtqrwmmEWPIQmr6bWL1PJUju7vnELy%2FDx9sZSc1xkL2HHxl60PV8Fhutrli9FXCyFJH5ew2QHox5Y8Ma52Ue2BvpsAKgJgGKW%2FSZVAGrd5g0SxJaXgFgYBinkJNdKsgp1NOEpYEu0c9MwDcvJOVw%3D%3D" type="image/vnd.microsoft.icon" sizes="16x16">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i> &nbsp;Menu</button>
+  <span class="w3-bar-item w3-right">Polar <APP_VERSION></span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+   <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="<PROJECT_LOGO>" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+      <span><b><PROJECT_NAME></b></span><br>
+      <span title="<ITERATION_COMMENT>"><ITERATION_NAME> (<ITERATION_ID>)</span>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Men&uacute;</h5>
+  </div>
+  <div class="w3-bar-block">
+    <a href="https://www.w3schools.com/w3css/tryw3css_templates_analytics.htm#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>&nbsp; Close Menu</a>
+    <a href="#general" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-dashboard"></i>&nbsp; General</a>
+    <a href="#assets" class="w3-bar-item w3-button w3-padding"><i class="fa fa-laptop fa-fw"></i>&nbsp; Activos</a>
+    <a href="#risks" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bomb fa-fw"></i>&nbsp; Amenazas</a>
+    <a href="#controls" class="w3-bar-item w3-button w3-padding"><i class="fa fa-shield fa-fw"></i>&nbsp; Salvaguardas</a>
+    <a href="#analysis" class="w3-bar-item w3-button w3-padding"><i class="fa fa-calculator fa-fw"></i>&nbsp; An&aacute;lisis</a>
+    <a href="#r2" class="w3-bar-item w3-button w3-padding"><i class="fa fa-signal fa-fw"></i>&nbsp; Riesgo residual</a>
+    <a href="#r3" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sign-in fa-fw"></i>&nbsp; Riesgo actual</a>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+  <!-- Header -->
+
+  <h2><b> An&aacute;lisis de riesgos de seguridad de la informaci&oacute;n</b></h2>
+
+
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-dashboard" id="general"></i> General</b></h5>
+  </header>
+
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-quarter">
+      <div class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class="fa fa-laptop w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3><#_ASSETS></h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Activos</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-red w3-padding-16">
+        <div class="w3-left"><i class="fa fa-bomb w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3><#_CATALOG></h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Amenazas</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-teal w3-padding-16">
+        <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3><#_APPLICABILITY></h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Cruces aplicables</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-orange w3-text-white w3-padding-16">
+        <div class="w3-left"><i class="fa fa-thermometer-half w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3><#_DIMS></h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Dimensiones</h4>
+      </div>
+    </div>
+  </div>
+
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-laptop" id="assets"></i> Activos</b></h5>
+  </header>
+
+  <div class="w3-panel">
+    <div class="w3-row-padding" style="margin:0 -16px">
+        <table class="w3-table w3-striped w3-white">
+		  <tbody>
+		  <[!ITERABLE_ASSET]>
+          <tr>
+            <td><IT_ASSET_ICONS></i></td>
+            <td><a href="#asset_analysis_<IT_ASSET_ID>"><IT_ASSET_NAME></a></td>
+            <td><i><IT_ASSET_VALUE></i></td>
+            <td><IT_ASSET_SCOPE></td>
+            <td><IT_ASSET_INTERNAL_ID></td>
+            <td><IT_ASSET_ID></td>
+          </tr><[ITERABLE_ASSET!]>
+        </tbody></table>
+    </div>
+  </div>
+  <hr>
+  
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-bomb" id="risks"></i> Amenazas</b></h5>
+  </header>
+
+  <div class="w3-container">
+    <h5>Magerit 3.0</h5>
+    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+      <tbody>
+	  <[!ITERABLE_RISKCATALOG]><tr>
+        <td title="<IT_RISK_DESCRIPTION>"><IT_RISK_CODE>. <IT_RISK_NAME></td>
+        <td><i><IT_RISK_DIMS><i></td>
+        <td><IT_RISK_ID></td>
+      </tr><[ITERABLE_RISKCATALOG!]>
+    </tbody></table><br>
+  </div>
+
+  <header class="w3-container" style="padding-top:22px">
+    <h3><b><i class="fa fa-shield" id="controls"></i> Salvaguardas</b></h5>
+  </header>
+  <div class="w3-container">
+    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+		<tr>
+			<td><b>Control</b></td>
+			<td><b>P</b></td>
+			<td><b>D</b></td>
+			<td><b>I</b></td>
+			<td><b>C</b></td>
+			<td><b>A</b></td>
+			<td><b>T</b></td>
+		</tr>
+	<[!ITERABLE_CONTROL_ANALISYS]><tr>
+			<td id="control_analysis_<IT_CONTROL_ID>" title="<IT_CONTROL_ANALISIS>"><IT_CONTROL_NAME></td>
+			<td><IT_CONTROL_P></td>
+			<td><IT_CONTROL_D1></td>
+			<td><IT_CONTROL_D2></td>
+			<td><IT_CONTROL_D3></td>
+			<td><IT_CONTROL_D4></td>
+			<td><IT_CONTROL_D5></td>
+   	</tr><[ITERABLE_CONTROL_ANALISYS!]>
+		</tbody></table><br>
+	</div>
+
+    
+
+  
+  <header class="w3-container" style="padding-top:22px">
+    <h3><b><i class="fa fa-calculator" id="analysis"></i> An&aacute;lisis</b></h5>
+  </header>
+
+  <div class="w3-container">
+	<[!ITERABLE_ASSET_ANALISYS]>
+    <h5 id="asset_analysis_<IT_ASSET_ID>"><IT_ASSET_ICONS>&nbsp;<b><u><IT_ASSET_NAME></b></u></a></h5>
+    <p><b>Valor del activo:</b> <IT_ASSET_VALUE></p>
+    <p><b>Salvaguardas:</b> <ASSET_SECURITY_CONTROL_LIST></p>
+    <p><b>Activos que repercuten riesgo:</b> <ASSET_GETTING_RISK></p>
+    <p><b>Activos a los que afecta:</b> <ASSET_SENDIG_RISK></p>
+    <p><b>Valoraci&oacute;n de amenazas:</b> </p> 
+    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">  
+	<thead><tr>
+        <td><b>Amenaza</b></td>
+        <td></td>
+        <td><b>D</b></td>
+        <td><b>I</b></td>
+        <td><b>C</b></td>
+        <td><b>A</b></td>
+        <td><b>T</b></td>
+
+      </tr></thead><tbody>
+	  <[!ITERABLE_ASSETxRISK_ANALISYS]><tr>
+        <td title='(<IT_ASSET_ID>) <IT_ASSETxRISK_COMMENTS>'><b><IT_ASSETxRISK_RISK_ID>. <IT_ASSETxRISK_RISK_NAME><b></td>
+        <td><b>RI</b></td>
+        <td title='<IT_ASSET_VALUE> * <IT_ASSETxRISK_RISK_RI_P> * <IT_ASSETxRISK_RISK_RI_I_D1>'><IT_ASSETxRISK_RISK_RI_R_D1></td>
+        <td title='<IT_ASSET_VALUE> * <IT_ASSETxRISK_RISK_RI_P> * <IT_ASSETxRISK_RISK_RI_I_D2>'><IT_ASSETxRISK_RISK_RI_R_D2></td>
+        <td title='<IT_ASSET_VALUE> * <IT_ASSETxRISK_RISK_RI_P> * <IT_ASSETxRISK_RISK_RI_I_D3>'><IT_ASSETxRISK_RISK_RI_R_D3></td>
+        <td title='<IT_ASSET_VALUE> * <IT_ASSETxRISK_RISK_RI_P> * <IT_ASSETxRISK_RISK_RI_I_D4>'><IT_ASSETxRISK_RISK_RI_R_D4></td>
+        <td title='<IT_ASSET_VALUE> * <IT_ASSETxRISK_RISK_RI_P> * <IT_ASSETxRISK_RISK_RI_I_D5>'><IT_ASSETxRISK_RISK_RI_R_D5></td>
+
+		</tr><tr>
+
+        <td> </td>
+        <td><b>RR</b></td>
+        <td title='<IT_ASSET_VALUE> * <IT_ASSETxRISK_RISK_RR_P> * <IT_ASSETxRISK_RISK_RR_I_D1>'><IT_ASSETxRISK_RISK_RR_R_D1></td>
+        <td title='<IT_ASSET_VALUE> * <IT_ASSETxRISK_RISK_RR_P> * <IT_ASSETxRISK_RISK_RR_I_D2>'><IT_ASSETxRISK_RISK_RR_R_D2></td>
+        <td title='<IT_ASSET_VALUE> * <IT_ASSETxRISK_RISK_RR_P> * <IT_ASSETxRISK_RISK_RR_I_D3>'><IT_ASSETxRISK_RISK_RR_R_D3></td>
+        <td title='<IT_ASSET_VALUE> * <IT_ASSETxRISK_RISK_RR_P> * <IT_ASSETxRISK_RISK_RR_I_D4>'><IT_ASSETxRISK_RISK_RR_R_D4></td>
+        <td title='<IT_ASSET_VALUE> * <IT_ASSETxRISK_RISK_RR_P> * <IT_ASSETxRISK_RISK_RR_I_D5>'><IT_ASSETxRISK_RISK_RR_R_D5></td>
+
+		</tr><tr>
+
+        <td> </td>
+        <td><b>RA</b></td>
+        <td title='<IT_ASSET_VALUE> * <IT_ASSETxRISK_RISK_RA_P> * <IT_ASSETxRISK_RISK_RA_I_D1>'><IT_ASSETxRISK_RISK_RA_R_D1></td>
+        <td title='<IT_ASSET_VALUE> * <IT_ASSETxRISK_RISK_RA_P> * <IT_ASSETxRISK_RISK_RA_I_D2>'><IT_ASSETxRISK_RISK_RA_R_D2></td>
+        <td title='<IT_ASSET_VALUE> * <IT_ASSETxRISK_RISK_RA_P> * <IT_ASSETxRISK_RISK_RA_I_D3>'><IT_ASSETxRISK_RISK_RA_R_D3></td>
+        <td title='<IT_ASSET_VALUE> * <IT_ASSETxRISK_RISK_RA_P> * <IT_ASSETxRISK_RISK_RA_I_D4>'><IT_ASSETxRISK_RISK_RA_R_D4></td>
+        <td title='<IT_ASSET_VALUE> * <IT_ASSETxRISK_RISK_RA_P> * <IT_ASSETxRISK_RISK_RA_I_D5>'><IT_ASSETxRISK_RISK_RA_R_D5></td>
+
+      </tr><[ITERABLE_ASSETxRISK_ANALISYS!]>
+    </tbody></table><br>
+    <hr>
+   	<[ITERABLE_ASSET_ANALISYS!]>
+
+  
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-signal" id="r2"></i> Riesgo residual</b></h5>
+  </header>
+
+<p>A continuaci&oacute;n se muestra el resumen de los <b><MAX_RR_COUNT></b> riesgos residuales m&aacute;s relevantes:</p>
+
+<table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+      <tbody><[!ITERABLE_COUNT_RR]><tr>
+        <td><IT_RISK_NAME></td>
+        <td><IT_RISK_COUNT></td>
+        <td><IT_RISK_VALUE></td>
+      </tr>
+<[ITERABLE_COUNT_RR!]>
+    </tbody></table>
+    <br>
+    <hr>
+
+<p>El siguiente listado muestra los riesgos anteriores detallando los cruces de activo y amenaza que los generan, ordenados por nivel de riesgo:</p>
+
+<table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+      <tbody><[!ITERABLE_MAX_RR]><tr>
+        <td><IT_ITER_COUNT>. <a href="#asset_analysis_<[IT_ASSET_ID]>"><[IT_ASSET_NAME]></a><br><[IT_RISK_NAME]></td>
+        <td><[IT_RISK_DIM]></td>
+        <td>
+        <div class="w3-grey">
+			<div class="w3-container w3-center w3-padding w3-<[IT_RISK_COLOUR]>" style="width:<[IT_RISK_VALUE_SHORT]>%"><[IT_RISK_VALUE_FULL]>%</div>
+		</div>     
+        </td>
+      </tr>
+<[ITERABLE_MAX_RR!]>
+    </tbody></table>
+<hr><hr>
+
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-sign-in" id="r3"></i> Riesgo actual</b></h5>
+  </header>
+
+
+<p>A continuaci&oacute;n se muestran los <b><MAX_RA_COUNT></b> riesgos actuales m&aacute;s relevantes por nivel de riesgo:</p>
+
+<table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+      <tbody><[!ITERABLE_COUNT_RA]><tr>
+        <td><IT_RISK_NAME></td>
+        <td><IT_RISK_COUNT></td>
+        <td><IT_RISK_VALUE></td>
+      </tr>
+<[ITERABLE_COUNT_RA!]>
+    </tbody></table>
+    <br>
+    <hr>
+
+<p>El siguiente listado muestra los riesgos anteriores detallando los cruces de activo y amenaza que los generan, ordenados por nivel de riesgo:</p>
+
+<table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+      <tbody><[!ITERABLE_MAX_RA]><tr>
+        <td><IT_ITER_COUNT>. <a href="#asset_analysis_<[IT_ASSET_ID]>"><[IT_ASSET_NAME]></a><br><[IT_RISK_NAME]></td>
+        <td><[IT_RISK_DIM]></td>
+        <td>
+        <div class="w3-grey">
+			<div class="w3-container w3-center w3-padding w3-<[IT_RISK_COLOUR]>" style="width:<[IT_RISK_VALUE_SHORT]>%"><[IT_RISK_VALUE_FULL]>%</div>
+		</div>     
+        </td>
+      </tr>
+<[ITERABLE_MAX_RA!]>
+    </tbody></table>
+<hr><hr><hr>
+  <div class="w3-container">
+
+  <div class="w3-container w3-dark-grey w3-padding-32">
+    <div class="w3-row">
+      <div class="w3-container w3-third">
+        <h5 class="w3-bottombar w3-border-green">Gesti&oacute;n del riesgo</h5>
+        <p>Metodolog&iacute;as</p>
+        <p>Buenas pr&aacute;cticas</p>
+      </div>
+      <div class="w3-container w3-third">
+        <h5 class="w3-bottombar w3-border-red">Recursos</h5>
+        <p>Certificaci&oacute;n</p>
+       </div>
+      <div class="w3-container w3-third">
+        <h5 class="w3-bottombar w3-border-orange">Polar</h5>
+        <p>Manual</p>
+        <p>Licencia</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-light-grey">
+    <h4></h4>
+    <p> <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"></a></p>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+
+</body></html>
