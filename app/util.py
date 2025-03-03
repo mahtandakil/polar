@@ -6,7 +6,7 @@
 # Created for: usync project
 # Dev line: PolarE 1.0
 # Creation day: 11/03/2012
-# Last change: 25/08/2023
+# Last change: 03/03/2025
 #---------------------------------------------------------------------------
 
 import app.config
@@ -16,22 +16,22 @@ from datetime import datetime
 
 
 dev_messages = ""
-dev_messages += "\n"
-dev_messages += "BUG: +1 en listado de riesgos\n"
-dev_messages += "BUG: negativos en RA\n"
-dev_messages += "BUG: descuadre en cabecera de titulo de fichero\n"
-dev_messages += "FEATURE: indicar en informe los NE asociados a cada activo y otras tareas pendientes de la iteración\n"
-dev_messages += "FEATURE: aplicabilidad en autocomentarios\n"
-dev_messages += "FEATURE: Informe >> tablas de agrupación por activo en R2 y R3\n"
-dev_messages += "FEATURE: Informe >> tablas interactuables\n"
-dev_messages += "FEATURE: Informe >> ID de iteración en nombre y contenido\n"
-dev_messages += "FEATURE: autocomentarios completos en r2 y r3\n"
-dev_messages += "FEATURE: orden en tabla de conteo de amenazas\n"
-dev_messages += "FEATURE: eliminar updates antiguos en db.py\n"
-dev_messages += "FEATURE: letrero de proyecto/iteracción en curso\n"
-dev_messages += "FEATURE: Salir\n"
-dev_messages += "OPTIMIZATION: código muerto\n"
-dev_messages += "OPTIMIZATION: suprimir update_risk3_values_by_dependences\n"
+#dev_messages += "\n"
+#dev_messages += "BUG: +1 en listado de riesgos\n"
+#dev_messages += "BUG: negativos en RA\n"
+#dev_messages += "BUG: descuadre en cabecera de titulo de fichero\n"
+#dev_messages += "FEATURE: indicar en informe los NE asociados a cada activo y otras tareas pendientes de la iteración\n"
+#dev_messages += "FEATURE: aplicabilidad en autocomentarios\n"
+#dev_messages += "FEATURE: Informe >> tablas de agrupación por activo en R2 y R3\n"
+#dev_messages += "FEATURE: Informe >> tablas interactuables\n"
+#dev_messages += "FEATURE: Informe >> ID de iteración en nombre y contenido\n"
+#dev_messages += "FEATURE: autocomentarios completos en r2 y r3\n"
+#dev_messages += "FEATURE: orden en tabla de conteo de amenazas\n"
+#dev_messages += "FEATURE: eliminar updates antiguos en db.py\n"
+#dev_messages += "FEATURE: letrero de proyecto/iteracción en curso\n"
+#dev_messages += "FEATURE: Salir\n"
+#dev_messages += "OPTIMIZATION: código muerto\n"
+#dev_messages += "OPTIMIZATION: suprimir update_risk3_values_by_dependences\n"
 
 
 #---------------------------------------------------------------------------
@@ -54,7 +54,7 @@ def title(project="", iteration=""):
 	output = ""
 	spaces = ""
 		
-	title = "POLAR " + app.config.app_version
+	title = app.config.app_name + " " + app.config.app_version
 	fix = len(title)
 		
 	output += "+----------------------"
