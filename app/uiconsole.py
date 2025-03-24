@@ -5,7 +5,7 @@
 # Created for: PolarE
 # Dev line: PolarE
 # Creation day: 03/03/2025
-# Last change: 03/03/2025
+# Last change: 24/03/2025
 #---------------------------------------------------------------------------
 
 import app.config
@@ -28,6 +28,11 @@ class UIConsole:
 		while keep_going:
 			app.util.clearScreen()
 			print(app.util.title())
+			
+			print("DEV notes:")
+			print("  @ Magerit.creator")
+			print("  @ Magerit.__init__")
+			print()
 				
 			print(lang['select_project'] + ":")
 #			self.project_list()
@@ -72,18 +77,38 @@ class UIConsole:
 #-------------------------------------------------------------------
 
 	def createProject(self):
-		app.util.clearScreen()
-		print(app.util.title())
+
+		keep_going = True
 		
-		count = 0	
-		
-		print(lang['new_project'] + ":")
-		for x in app.config.modules:
-			print("  " + str(count+1) + ". " + x['name'])
-		print ("  X. " + lang['exit'])
-		
-		input(">")
-		
+		while keep_going:
+			app.util.clearScreen()
+			print(app.util.title())
+			
+			count = 0	
+			
+			print(lang['new_project'] + ":")
+			for x in app.config.modules:
+				print("  " + str(count+1) + ". " + x['name'])
+			print ("  X. " + lang['exit'])
+			
+			selection = input(">")
+
+			if selection.isnumeric():
+				if int(selection) > 0 and int(selection) <= len(app.config.modules):
+					module_creation = app.config.modules[int(selection)-1]['module']
+					module_creation.creator()
+					
+				else:
+					print("\n" + lang['wrong_option'])
+					input("> ")
+				
+			elif selection == "X" or selection == "x":
+				keep_going = False
+
+			else:
+				print("\n" + lang['wrong_option'])
+				input("> ")	
+
 
 #-------------------------------------------------------------------
 
